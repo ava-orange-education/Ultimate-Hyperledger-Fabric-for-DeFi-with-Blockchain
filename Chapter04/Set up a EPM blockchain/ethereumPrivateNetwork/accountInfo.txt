@@ -1,0 +1,41 @@
+node 1  Account info 
+Your new key was generated
+
+Public address of the key:   0xc8F7af3980B662C8c119E4d2265CDE3335bbb9B9
+Path of the secret key file: node1\data\keystore\UTC--2024-06-06T02-33-25.555269900Z--c8f7af3980b662c8c119e4d2265cde3335bbb9b9
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+
+Public address of the key:   0xaD1b2951A8ef65447a6D20F14f21999019aA18B0
+
+password: 1234567
+
+node2 Account info
+Your new key was generated
+
+Public address of the key:   0xF460bDc9B7b432b6c84141162246e2c8a359795C
+Path of the secret key file: node2\data\keystore\UTC--2024-06-06T02-35-12.611324400Z--f460bdc9b7b432b6c84141162246e2c8a359795c
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+password: 123456
+
+bootnode enode: 
+enode://0c1c6156762449448a5ccb86214852ba66f386cb12e76dafcfc8647f94fa747be05ccec9281565bd681f6d48df641803c68e24c768b94e60d87b39b33d126dea@127.0.0.1:0?discport=30301
+
+node1 
+geth --networkid 12345 --datadir "./data" --bootnodes enode://0c1c6156762449448a5ccb86214852ba66f386cb12e76dafcfc8647f94fa747be05ccec9281565bd681f6d48df641803c68e24c768b94e60d87b39b33d126dea@127.0.0.1:30301 --port 30303 --ipcdisable --syncmode full --http --http.corsdomain "*" --http.port 8545 --allow-insecure-unlock --unlock 0xc8F7af3980B662C8c119E4d2265CDE3335bbb9B9 --password password.txt --miner.etherbase 0xc8F7af3980B662C8c119E4d2265CDE3335bbb9B9 --mine console
+
+node2
+geth --networkid 12345 --datadir "./data" --bootnodes enode://1b5ebf3079d49728f34a1307ccd81af0468aa133fb9625043ef7a27b6127fdccc4674fb6910935feae9a8c36504bb4429c26175c96518cdb70e97b5fb8941ada@127.0.0.1:30301 --port 30304 --ipcdisable --syncmode full --http --allow-insecure-unlock --http.corsdomain "*" --http.port 8546 --authrpc.port 8552 --unlock 0xF460bDc9B7b432b6c84141162246e2c8a359795C --password password.txt console
+
+
+metamsk secreate key
+piano kiss camera life absent robot media either tape arm security hazard
